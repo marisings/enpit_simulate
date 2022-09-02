@@ -112,6 +112,23 @@ Control_Port1_takeoff( const r_t p_alt )
  */
 
 /*
+ * Domain Function:  halt
+ */
+void
+Control_halt()
+{
+  Control_Controller * ctrl=0;
+  /* SELECT any ctrl FROM INSTANCES OF Controller */
+  XTUML_OAL_STMT_TRACE( 1, "SELECT any ctrl FROM INSTANCES OF Controller" );
+  ctrl = (Control_Controller *) Escher_SetGetAny( &pG_Control_Controller_extent.active );
+  /* GENERATE Controller3:halt() TO ctrl */
+  XTUML_OAL_STMT_TRACE( 1, "GENERATE Controller3:halt() TO ctrl" );
+  { Escher_xtUMLEvent_t * e = Escher_NewxtUMLEvent( ctrl, &Control_Controllerevent3c );
+    Escher_SendEvent( e );
+  }
+}
+
+/*
  * Domain Function:  setup
  */
 void
