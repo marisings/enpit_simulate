@@ -53,12 +53,30 @@ typedef struct {
 } Control_Controllerevent3;
 extern const Escher_xtUMLEventConstant_t Control_Controllerevent3c;
 /*
+ * instance event:  Controller4:'Ddown'
+ */
+typedef struct {
+  EVENT_BASE_ATTRIBUTE_LIST         /* base attributes of all event classes */
+  /* Note:  no supplemental data for this event */
+} Control_Controllerevent4;
+extern const Escher_xtUMLEventConstant_t Control_Controllerevent4c;
+/*
+ * instance event:  Controller5:'Dup'
+ */
+typedef struct {
+  EVENT_BASE_ATTRIBUTE_LIST         /* base attributes of all event classes */
+  /* Note:  no supplemental data for this event */
+} Control_Controllerevent5;
+extern const Escher_xtUMLEventConstant_t Control_Controllerevent5c;
+/*
  * union of events targeted towards 'Controller' state machine
  */
 typedef union {
   Control_Controllerevent1 controller1_1;  
   Control_Controllerevent2 controller2_2;  
   Control_Controllerevent3 controller3_3;  
+  Control_Controllerevent4 controller4_4;  
+  Control_Controllerevent5 controller5_5;  
 } Control_Controller_Events_u;
 /*
  * enumeration of state model states for class
@@ -71,12 +89,15 @@ typedef union {
 #define Control_Controller_STATE_8 6  /* state [8]:  (goal) */
 #define Control_Controller_STATE_9 7  /* state [9]:  (descent) */
 #define Control_Controller_STATE_10 8  /* state [10]:  (rise) */
+#define Control_Controller_STATE_11 9  /* state [11]:  (home) */
 /*
  * enumeration of state model event numbers
  */
 #define CONTROL_CONTROLLEREVENT1NUM 0  /* Controller1:'start' */
 #define CONTROL_CONTROLLEREVENT2NUM 1  /* Controller2:'ready' */
 #define CONTROL_CONTROLLEREVENT3NUM 2  /* Controller3:'halt' */
+#define CONTROL_CONTROLLEREVENT4NUM 3  /* Controller4:'Ddown' */
+#define CONTROL_CONTROLLEREVENT5NUM 4  /* Controller5:'Dup' */
 extern void Control_Controller_Dispatch( Escher_xtUMLEvent_t * );
 
 #ifdef	__cplusplus

@@ -2582,69 +2582,127 @@ INSERT INTO SM_EVT
 	'',
 	'Controller3',
 	'');
-INSERT INTO SM_STATE
+INSERT INTO SM_LEVT
 	VALUES (199,
+	196,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (199,
+	196,
+	0);
+INSERT INTO SM_EVT
+	VALUES (199,
+	196,
+	0,
+	4,
+	'Ddown',
+	0,
+	'',
+	'Controller4',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (200,
+	196,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (200,
+	196,
+	0);
+INSERT INTO SM_EVT
+	VALUES (200,
+	196,
+	0,
+	5,
+	'Dup',
+	0,
+	'',
+	'Controller5',
+	'');
+INSERT INTO SM_STATE
+	VALUES (201,
 	196,
 	0,
 	'init',
 	1,
 	0);
 INSERT INTO SM_SEME
-	VALUES (199,
+	VALUES (201,
 	197,
 	196,
 	0);
 INSERT INTO SM_CH
-	VALUES (199,
+	VALUES (201,
 	191,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (199,
+	VALUES (201,
 	191,
 	196,
 	0);
 INSERT INTO SM_CH
-	VALUES (199,
+	VALUES (201,
 	198,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (199,
+	VALUES (201,
 	198,
 	196,
 	0);
-INSERT INTO SM_MOAH
-	VALUES (200,
+INSERT INTO SM_CH
+	VALUES (201,
+	199,
 	196,
-	199);
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (201,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (201,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (201,
+	200,
+	196,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (202,
+	196,
+	201);
 INSERT INTO SM_AH
-	VALUES (200,
+	VALUES (202,
 	196);
 INSERT INTO SM_ACT
-	VALUES (200,
+	VALUES (202,
 	196,
 	1,
 	'',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (201,
+	VALUES (203,
 	196,
-	200);
+	202);
 INSERT INTO ACT_ACT
-	VALUES (201,
+	VALUES (203,
 	'state',
 	0,
-	202,
+	204,
 	0,
 	0,
 	'Controller::init',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (202,
+	VALUES (204,
 	0,
 	0,
 	0,
@@ -2664,66 +2722,88 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	201,
+	203,
 	0);
 INSERT INTO SM_STATE
-	VALUES (203,
+	VALUES (205,
 	196,
 	0,
 	'takeoff',
 	2,
 	0);
 INSERT INTO SM_CH
-	VALUES (203,
+	VALUES (205,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (203,
+	VALUES (205,
 	197,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (203,
+	VALUES (205,
 	191,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (203,
+	VALUES (205,
 	198,
 	196,
 	0);
-INSERT INTO SM_MOAH
-	VALUES (204,
+INSERT INTO SM_CH
+	VALUES (205,
+	199,
 	196,
-	203);
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (205,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (205,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (205,
+	200,
+	196,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (206,
+	196,
+	205);
 INSERT INTO SM_AH
-	VALUES (204,
+	VALUES (206,
 	196);
 INSERT INTO SM_ACT
-	VALUES (204,
+	VALUES (206,
 	196,
 	1,
-	'Port1::takeoff( alt:10 );
+	'Port1::takeoff( alt:1 );
 Port1::set_heading( heading:0 );',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (205,
+	VALUES (207,
 	196,
-	204);
+	206);
 INSERT INTO ACT_ACT
-	VALUES (205,
+	VALUES (207,
 	'state',
 	0,
-	206,
+	208,
 	0,
 	0,
 	'Controller::takeoff',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (206,
+	VALUES (208,
 	0,
 	0,
 	0,
@@ -2743,17 +2823,17 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	205,
+	207,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (207,
-	206,
+	VALUES (209,
 	208,
+	210,
 	1,
 	1,
 	'Controller::takeoff line: 1');
 INSERT INTO ACT_IOP
-	VALUES (207,
+	VALUES (209,
 	1,
 	8,
 	1,
@@ -2762,14 +2842,14 @@ INSERT INTO ACT_IOP
 	166,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (208,
-	206,
+	VALUES (210,
+	208,
 	0,
 	2,
 	1,
 	'Controller::takeoff line: 2');
 INSERT INTO ACT_IOP
-	VALUES (208,
+	VALUES (210,
 	2,
 	8,
 	2,
@@ -2778,31 +2858,31 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (209,
+	VALUES (211,
 	0,
 	0,
 	1,
 	21,
-	22,
+	21,
 	0,
 	0,
 	0,
 	0,
 	10,
-	206);
+	208);
 INSERT INTO V_LIN
-	VALUES (209,
-	'10');
+	VALUES (211,
+	'1');
 INSERT INTO V_PAR
-	VALUES (209,
-	207,
+	VALUES (211,
+	209,
 	0,
 	'alt',
 	0,
 	1,
 	17);
 INSERT INTO V_VAL
-	VALUES (210,
+	VALUES (212,
 	0,
 	0,
 	2,
@@ -2813,76 +2893,98 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	206);
+	208);
 INSERT INTO V_LIN
-	VALUES (210,
+	VALUES (212,
 	'0');
 INSERT INTO V_PAR
-	VALUES (210,
-	208,
+	VALUES (212,
+	210,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_STATE
-	VALUES (211,
+	VALUES (213,
 	196,
 	0,
 	'go',
 	3,
 	0);
 INSERT INTO SM_CH
-	VALUES (211,
+	VALUES (213,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (211,
+	VALUES (213,
 	197,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (211,
+	VALUES (213,
 	191,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (211,
+	VALUES (213,
 	198,
 	196,
 	0);
-INSERT INTO SM_MOAH
-	VALUES (212,
+INSERT INTO SM_CH
+	VALUES (213,
+	199,
 	196,
-	211);
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (213,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (213,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (213,
+	200,
+	196,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (214,
+	196,
+	213);
 INSERT INTO SM_AH
-	VALUES (212,
+	VALUES (214,
 	196);
 INSERT INTO SM_ACT
-	VALUES (212,
+	VALUES (214,
 	196,
 	1,
-	'Port1::set_destination( x:3, y:3, z:10 );
+	'Port1::set_destination( x:-1, y:1, z:5 );
 Port1::set_heading( heading:0 );',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (213,
+	VALUES (215,
 	196,
-	212);
+	214);
 INSERT INTO ACT_ACT
-	VALUES (213,
+	VALUES (215,
 	'state',
 	0,
-	214,
+	216,
 	0,
 	0,
 	'Controller::go',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (214,
+	VALUES (216,
 	0,
 	0,
 	0,
@@ -2902,17 +3004,17 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	213,
+	215,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (215,
-	214,
+	VALUES (217,
 	216,
+	218,
 	1,
 	1,
 	'Controller::go line: 1');
 INSERT INTO ACT_IOP
-	VALUES (215,
+	VALUES (217,
 	1,
 	8,
 	1,
@@ -2921,14 +3023,14 @@ INSERT INTO ACT_IOP
 	175,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (216,
-	214,
+	VALUES (218,
+	216,
 	0,
 	2,
 	1,
 	'Controller::go line: 2');
 INSERT INTO ACT_IOP
-	VALUES (216,
+	VALUES (218,
 	2,
 	8,
 	2,
@@ -2937,79 +3039,96 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (217,
-	0,
-	0,
-	1,
-	27,
-	27,
-	0,
-	0,
-	0,
-	0,
-	10,
-	214);
-INSERT INTO V_LIN
-	VALUES (217,
-	'3');
-INSERT INTO V_PAR
-	VALUES (217,
-	215,
-	0,
-	'x',
-	218,
-	1,
-	25);
-INSERT INTO V_VAL
-	VALUES (218,
-	0,
-	0,
-	1,
-	32,
-	32,
-	0,
-	0,
-	0,
-	0,
-	10,
-	214);
-INSERT INTO V_LIN
-	VALUES (218,
-	'3');
-INSERT INTO V_PAR
-	VALUES (218,
-	215,
-	0,
-	'y',
-	219,
-	1,
-	30);
-INSERT INTO V_VAL
 	VALUES (219,
 	0,
 	0,
+	-1,
+	-1,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	10,
+	216);
+INSERT INTO V_UNY
+	VALUES (219,
+	220,
+	'-');
+INSERT INTO V_PAR
+	VALUES (219,
+	217,
+	0,
+	'x',
+	221,
 	1,
-	37,
+	25);
+INSERT INTO V_VAL
+	VALUES (220,
+	0,
+	0,
+	1,
+	28,
+	28,
+	0,
+	0,
+	0,
+	0,
+	10,
+	216);
+INSERT INTO V_LIN
+	VALUES (220,
+	'1');
+INSERT INTO V_VAL
+	VALUES (221,
+	0,
+	0,
+	1,
+	33,
+	33,
+	0,
+	0,
+	0,
+	0,
+	10,
+	216);
+INSERT INTO V_LIN
+	VALUES (221,
+	'1');
+INSERT INTO V_PAR
+	VALUES (221,
+	217,
+	0,
+	'y',
+	222,
+	1,
+	31);
+INSERT INTO V_VAL
+	VALUES (222,
+	0,
+	0,
+	1,
+	38,
 	38,
 	0,
 	0,
 	0,
 	0,
 	10,
-	214);
+	216);
 INSERT INTO V_LIN
-	VALUES (219,
-	'10');
+	VALUES (222,
+	'5');
 INSERT INTO V_PAR
-	VALUES (219,
-	215,
+	VALUES (222,
+	217,
 	0,
 	'z',
 	0,
 	1,
-	35);
+	36);
 INSERT INTO V_VAL
-	VALUES (220,
+	VALUES (223,
 	0,
 	0,
 	2,
@@ -3020,67 +3139,89 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	214);
+	216);
 INSERT INTO V_LIN
-	VALUES (220,
+	VALUES (223,
 	'0');
 INSERT INTO V_PAR
-	VALUES (220,
-	216,
+	VALUES (223,
+	218,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_STATE
-	VALUES (221,
+	VALUES (224,
 	196,
 	0,
 	'land',
 	4,
 	0);
 INSERT INTO SM_CH
-	VALUES (221,
+	VALUES (224,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (221,
+	VALUES (224,
 	197,
 	196,
 	0);
 INSERT INTO SM_CH
-	VALUES (221,
+	VALUES (224,
 	191,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (221,
+	VALUES (224,
 	191,
 	196,
 	0);
 INSERT INTO SM_CH
-	VALUES (221,
+	VALUES (224,
 	198,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (221,
+	VALUES (224,
 	198,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (224,
+	199,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (224,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (224,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (224,
+	200,
 	196,
 	0);
 INSERT INTO SM_MOAH
-	VALUES (222,
+	VALUES (225,
 	196,
-	221);
+	224);
 INSERT INTO SM_AH
-	VALUES (222,
+	VALUES (225,
 	196);
 INSERT INTO SM_ACT
-	VALUES (222,
+	VALUES (225,
 	196,
 	1,
 	'Port1::land();
@@ -3089,20 +3230,20 @@ Port1::set_heading( heading:0 );
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (223,
+	VALUES (226,
 	196,
-	222);
+	225);
 INSERT INTO ACT_ACT
-	VALUES (223,
+	VALUES (226,
 	'state',
 	0,
-	224,
+	227,
 	0,
 	0,
 	'Controller::land',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (224,
+	VALUES (227,
 	0,
 	0,
 	0,
@@ -3122,17 +3263,17 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	223,
+	226,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (225,
-	224,
-	226,
+	VALUES (228,
+	227,
+	229,
 	1,
 	1,
 	'Controller::land line: 1');
 INSERT INTO ACT_IOP
-	VALUES (225,
+	VALUES (228,
 	1,
 	8,
 	1,
@@ -3141,14 +3282,14 @@ INSERT INTO ACT_IOP
 	169,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (226,
-	224,
+	VALUES (229,
+	227,
 	0,
 	2,
 	1,
 	'Controller::land line: 2');
 INSERT INTO ACT_IOP
-	VALUES (226,
+	VALUES (229,
 	2,
 	8,
 	2,
@@ -3157,7 +3298,7 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (227,
+	VALUES (230,
 	0,
 	0,
 	2,
@@ -3168,82 +3309,98 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	224);
+	227);
 INSERT INTO V_LIN
-	VALUES (227,
+	VALUES (230,
 	'0');
 INSERT INTO V_PAR
-	VALUES (227,
-	226,
+	VALUES (230,
+	229,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_STATE
-	VALUES (228,
+	VALUES (231,
 	196,
 	0,
 	'go2',
 	5,
 	0);
 INSERT INTO SM_CH
-	VALUES (228,
+	VALUES (231,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (228,
+	VALUES (231,
 	197,
 	196,
 	0);
 INSERT INTO SM_CH
-	VALUES (228,
+	VALUES (231,
 	191,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (228,
+	VALUES (231,
 	191,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (228,
+	VALUES (231,
 	198,
 	196,
 	0);
-INSERT INTO SM_MOAH
-	VALUES (229,
+INSERT INTO SM_SEME
+	VALUES (231,
+	199,
 	196,
-	228);
+	0);
+INSERT INTO SM_CH
+	VALUES (231,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (231,
+	200,
+	196,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (232,
+	196,
+	231);
 INSERT INTO SM_AH
-	VALUES (229,
+	VALUES (232,
 	196);
 INSERT INTO SM_ACT
-	VALUES (229,
+	VALUES (232,
 	196,
 	1,
-	'Port1::set_destination( x:3, y:-3, z:10 );
+	'Port1::set_destination( x:10, y:-20, z:5 );
 Port1::set_heading( heading:0 );',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (230,
+	VALUES (233,
 	196,
-	229);
+	232);
 INSERT INTO ACT_ACT
-	VALUES (230,
+	VALUES (233,
 	'state',
 	0,
-	231,
+	234,
 	0,
 	0,
 	'Controller::go2',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (231,
+	VALUES (234,
 	0,
 	0,
 	0,
@@ -3263,17 +3420,17 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	230,
+	233,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (232,
-	231,
-	233,
+	VALUES (235,
+	234,
+	236,
 	1,
 	1,
 	'Controller::go2 line: 1');
 INSERT INTO ACT_IOP
-	VALUES (232,
+	VALUES (235,
 	1,
 	8,
 	1,
@@ -3282,14 +3439,14 @@ INSERT INTO ACT_IOP
 	175,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (233,
-	231,
+	VALUES (236,
+	234,
 	0,
 	2,
 	1,
 	'Controller::go2 line: 2');
 INSERT INTO ACT_IOP
-	VALUES (233,
+	VALUES (236,
 	2,
 	8,
 	2,
@@ -3298,96 +3455,96 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (234,
-	0,
-	0,
-	1,
-	27,
-	27,
-	0,
-	0,
-	0,
-	0,
-	10,
-	231);
-INSERT INTO V_LIN
-	VALUES (234,
-	'3');
-INSERT INTO V_PAR
-	VALUES (234,
-	232,
-	0,
-	'x',
-	235,
-	1,
-	25);
-INSERT INTO V_VAL
-	VALUES (235,
-	0,
-	0,
-	-1,
-	-1,
-	-1,
-	0,
-	0,
-	0,
-	0,
-	10,
-	231);
-INSERT INTO V_UNY
-	VALUES (235,
-	236,
-	'-');
-INSERT INTO V_PAR
-	VALUES (235,
-	232,
-	0,
-	'y',
-	237,
-	1,
-	30);
-INSERT INTO V_VAL
-	VALUES (236,
-	0,
-	0,
-	1,
-	33,
-	33,
-	0,
-	0,
-	0,
-	0,
-	10,
-	231);
-INSERT INTO V_LIN
-	VALUES (236,
-	'3');
-INSERT INTO V_VAL
 	VALUES (237,
 	0,
 	0,
 	1,
-	38,
-	39,
+	27,
+	28,
 	0,
 	0,
 	0,
 	0,
 	10,
-	231);
+	234);
 INSERT INTO V_LIN
 	VALUES (237,
 	'10');
 INSERT INTO V_PAR
 	VALUES (237,
-	232,
+	235,
+	0,
+	'x',
+	238,
+	1,
+	25);
+INSERT INTO V_VAL
+	VALUES (238,
+	0,
+	0,
+	-1,
+	-1,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	10,
+	234);
+INSERT INTO V_UNY
+	VALUES (238,
+	239,
+	'-');
+INSERT INTO V_PAR
+	VALUES (238,
+	235,
+	0,
+	'y',
+	240,
+	1,
+	31);
+INSERT INTO V_VAL
+	VALUES (239,
+	0,
+	0,
+	1,
+	34,
+	35,
+	0,
+	0,
+	0,
+	0,
+	10,
+	234);
+INSERT INTO V_LIN
+	VALUES (239,
+	'20');
+INSERT INTO V_VAL
+	VALUES (240,
+	0,
+	0,
+	1,
+	40,
+	40,
+	0,
+	0,
+	0,
+	0,
+	10,
+	234);
+INSERT INTO V_LIN
+	VALUES (240,
+	'5');
+INSERT INTO V_PAR
+	VALUES (240,
+	235,
 	0,
 	'z',
 	0,
 	1,
-	36);
+	38);
 INSERT INTO V_VAL
-	VALUES (238,
+	VALUES (241,
 	0,
 	0,
 	2,
@@ -3398,82 +3555,98 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	231);
+	234);
 INSERT INTO V_LIN
-	VALUES (238,
+	VALUES (241,
 	'0');
 INSERT INTO V_PAR
-	VALUES (238,
-	233,
+	VALUES (241,
+	236,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_STATE
-	VALUES (239,
+	VALUES (242,
 	196,
 	0,
 	'goal',
 	8,
 	0);
 INSERT INTO SM_CH
-	VALUES (239,
+	VALUES (242,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (239,
+	VALUES (242,
 	197,
 	196,
 	0);
-INSERT INTO SM_CH
-	VALUES (239,
-	191,
-	196,
-	0,
-	'');
 INSERT INTO SM_SEME
-	VALUES (239,
+	VALUES (242,
 	191,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (239,
+	VALUES (242,
 	198,
 	196,
 	0);
-INSERT INTO SM_MOAH
-	VALUES (240,
+INSERT INTO SM_CH
+	VALUES (242,
+	199,
 	196,
-	239);
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (242,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (242,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (242,
+	200,
+	196,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (243,
+	196,
+	242);
 INSERT INTO SM_AH
-	VALUES (240,
+	VALUES (243,
 	196);
 INSERT INTO SM_ACT
-	VALUES (240,
+	VALUES (243,
 	196,
 	1,
-	'Port1::set_destination( x:0, y:0, z:10 );
+	'Port1::set_destination( x:0, y:0, z:5 );
 Port1::set_heading( heading:0 );',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (241,
+	VALUES (244,
 	196,
-	240);
+	243);
 INSERT INTO ACT_ACT
-	VALUES (241,
+	VALUES (244,
 	'state',
 	0,
-	242,
+	245,
 	0,
 	0,
 	'Controller::goal',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (242,
+	VALUES (245,
 	0,
 	0,
 	0,
@@ -3493,17 +3666,17 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	241,
+	244,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (243,
-	242,
-	244,
+	VALUES (246,
+	245,
+	247,
 	1,
 	1,
 	'Controller::goal line: 1');
 INSERT INTO ACT_IOP
-	VALUES (243,
+	VALUES (246,
 	1,
 	8,
 	1,
@@ -3512,14 +3685,14 @@ INSERT INTO ACT_IOP
 	175,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (244,
-	242,
+	VALUES (247,
+	245,
 	0,
 	2,
 	1,
 	'Controller::goal line: 2');
 INSERT INTO ACT_IOP
-	VALUES (244,
+	VALUES (247,
 	2,
 	8,
 	2,
@@ -3528,7 +3701,7 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (245,
+	VALUES (248,
 	0,
 	0,
 	1,
@@ -3539,20 +3712,20 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	242);
+	245);
 INSERT INTO V_LIN
-	VALUES (245,
+	VALUES (248,
 	'0');
 INSERT INTO V_PAR
-	VALUES (245,
-	243,
+	VALUES (248,
+	246,
 	0,
 	'x',
-	246,
+	249,
 	1,
 	25);
 INSERT INTO V_VAL
-	VALUES (246,
+	VALUES (249,
 	0,
 	0,
 	1,
@@ -3563,44 +3736,44 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	242);
+	245);
 INSERT INTO V_LIN
-	VALUES (246,
+	VALUES (249,
 	'0');
 INSERT INTO V_PAR
-	VALUES (246,
-	243,
+	VALUES (249,
+	246,
 	0,
 	'y',
-	247,
+	250,
 	1,
 	30);
 INSERT INTO V_VAL
-	VALUES (247,
+	VALUES (250,
 	0,
 	0,
 	1,
 	37,
-	38,
+	37,
 	0,
 	0,
 	0,
 	0,
 	10,
-	242);
+	245);
 INSERT INTO V_LIN
-	VALUES (247,
-	'10');
+	VALUES (250,
+	'5');
 INSERT INTO V_PAR
-	VALUES (247,
-	243,
+	VALUES (250,
+	246,
 	0,
 	'z',
 	0,
 	1,
 	35);
 INSERT INTO V_VAL
-	VALUES (248,
+	VALUES (251,
 	0,
 	0,
 	2,
@@ -3611,88 +3784,98 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	242);
+	245);
 INSERT INTO V_LIN
-	VALUES (248,
+	VALUES (251,
 	'0');
 INSERT INTO V_PAR
-	VALUES (248,
-	244,
+	VALUES (251,
+	247,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_STATE
-	VALUES (249,
+	VALUES (252,
 	196,
 	0,
 	'descent',
 	9,
 	0);
 INSERT INTO SM_CH
-	VALUES (249,
+	VALUES (252,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (249,
+	VALUES (252,
 	197,
 	196,
 	0);
-INSERT INTO SM_CH
-	VALUES (249,
-	191,
-	196,
-	0,
-	'');
 INSERT INTO SM_SEME
-	VALUES (249,
+	VALUES (252,
 	191,
 	196,
 	0);
-INSERT INTO SM_CH
-	VALUES (249,
+INSERT INTO SM_SEME
+	VALUES (252,
 	198,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (252,
+	199,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (249,
-	198,
+	VALUES (252,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (252,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (252,
+	200,
 	196,
 	0);
 INSERT INTO SM_MOAH
-	VALUES (250,
+	VALUES (253,
 	196,
-	249);
+	252);
 INSERT INTO SM_AH
-	VALUES (250,
+	VALUES (253,
 	196);
 INSERT INTO SM_ACT
-	VALUES (250,
+	VALUES (253,
 	196,
 	1,
-	'Port1::set_destination( x:3, y:-3, z:1 );
+	'Port1::set_destination( x:11, y:-21, z:1 );
 Port1::set_heading( heading:0 );',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (251,
+	VALUES (254,
 	196,
-	250);
+	253);
 INSERT INTO ACT_ACT
-	VALUES (251,
+	VALUES (254,
 	'state',
 	0,
-	252,
+	255,
 	0,
 	0,
 	'Controller::descent',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (252,
+	VALUES (255,
 	0,
 	0,
 	0,
@@ -3712,17 +3895,17 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	251,
+	254,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (253,
-	252,
-	254,
+	VALUES (256,
+	255,
+	257,
 	1,
 	1,
 	'Controller::descent line: 1');
 INSERT INTO ACT_IOP
-	VALUES (253,
+	VALUES (256,
 	1,
 	8,
 	1,
@@ -3731,14 +3914,14 @@ INSERT INTO ACT_IOP
 	175,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (254,
-	252,
+	VALUES (257,
+	255,
 	0,
 	2,
 	1,
 	'Controller::descent line: 2');
 INSERT INTO ACT_IOP
-	VALUES (254,
+	VALUES (257,
 	2,
 	8,
 	2,
@@ -3747,31 +3930,31 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (255,
+	VALUES (258,
 	0,
 	0,
 	1,
 	27,
-	27,
+	28,
 	0,
 	0,
 	0,
 	0,
 	10,
-	252);
+	255);
 INSERT INTO V_LIN
-	VALUES (255,
-	'3');
+	VALUES (258,
+	'11');
 INSERT INTO V_PAR
-	VALUES (255,
-	253,
+	VALUES (258,
+	256,
 	0,
 	'x',
-	256,
+	259,
 	1,
 	25);
 INSERT INTO V_VAL
-	VALUES (256,
+	VALUES (259,
 	0,
 	0,
 	-1,
@@ -3782,61 +3965,61 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	252);
+	255);
 INSERT INTO V_UNY
-	VALUES (256,
-	257,
+	VALUES (259,
+	260,
 	'-');
 INSERT INTO V_PAR
-	VALUES (256,
-	253,
+	VALUES (259,
+	256,
 	0,
 	'y',
-	258,
+	261,
 	1,
-	30);
+	31);
 INSERT INTO V_VAL
-	VALUES (257,
+	VALUES (260,
 	0,
 	0,
 	1,
-	33,
-	33,
+	34,
+	35,
 	0,
 	0,
 	0,
 	0,
 	10,
-	252);
+	255);
 INSERT INTO V_LIN
-	VALUES (257,
-	'3');
+	VALUES (260,
+	'21');
 INSERT INTO V_VAL
-	VALUES (258,
+	VALUES (261,
 	0,
 	0,
 	1,
-	38,
-	38,
+	40,
+	40,
 	0,
 	0,
 	0,
 	0,
 	10,
-	252);
+	255);
 INSERT INTO V_LIN
-	VALUES (258,
+	VALUES (261,
 	'1');
 INSERT INTO V_PAR
-	VALUES (258,
-	253,
+	VALUES (261,
+	256,
 	0,
 	'z',
 	0,
 	1,
-	36);
+	38);
 INSERT INTO V_VAL
-	VALUES (259,
+	VALUES (262,
 	0,
 	0,
 	2,
@@ -3847,82 +4030,98 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	252);
+	255);
 INSERT INTO V_LIN
-	VALUES (259,
+	VALUES (262,
 	'0');
 INSERT INTO V_PAR
-	VALUES (259,
-	254,
+	VALUES (262,
+	257,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_STATE
-	VALUES (260,
+	VALUES (263,
 	196,
 	0,
 	'rise',
 	10,
 	0);
 INSERT INTO SM_CH
-	VALUES (260,
+	VALUES (263,
 	197,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (260,
+	VALUES (263,
 	197,
 	196,
 	0);
 INSERT INTO SM_SEME
-	VALUES (260,
+	VALUES (263,
 	191,
 	196,
 	0);
-INSERT INTO SM_CH
-	VALUES (260,
+INSERT INTO SM_SEME
+	VALUES (263,
 	198,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (263,
+	199,
 	196,
 	0,
 	'');
 INSERT INTO SM_SEME
-	VALUES (260,
-	198,
+	VALUES (263,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (263,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (263,
+	200,
 	196,
 	0);
 INSERT INTO SM_MOAH
-	VALUES (261,
+	VALUES (264,
 	196,
-	260);
+	263);
 INSERT INTO SM_AH
-	VALUES (261,
+	VALUES (264,
 	196);
 INSERT INTO SM_ACT
-	VALUES (261,
+	VALUES (264,
 	196,
 	1,
-	'Port1::takeoff( alt:10 );
+	'Port1::set_destination( x:9, y:-19, z:5 );
 Port1::set_heading( heading:0 );',
 	'',
 	0);
 INSERT INTO ACT_SAB
-	VALUES (262,
+	VALUES (265,
 	196,
-	261);
+	264);
 INSERT INTO ACT_ACT
-	VALUES (262,
+	VALUES (265,
 	'state',
 	0,
-	263,
+	266,
 	0,
 	0,
 	'Controller::rise',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (263,
+	VALUES (266,
 	0,
 	0,
 	0,
@@ -3942,17 +4141,269 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	262,
+	265,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (264,
-	263,
-	265,
+	VALUES (267,
+	266,
+	268,
 	1,
 	1,
 	'Controller::rise line: 1');
 INSERT INTO ACT_IOP
-	VALUES (264,
+	VALUES (267,
+	1,
+	8,
+	1,
+	1,
+	0,
+	175,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (268,
+	266,
+	0,
+	2,
+	1,
+	'Controller::rise line: 2');
+INSERT INTO ACT_IOP
+	VALUES (268,
+	2,
+	8,
+	2,
+	1,
+	0,
+	178,
+	0);
+INSERT INTO V_VAL
+	VALUES (269,
+	0,
+	0,
+	1,
+	27,
+	27,
+	0,
+	0,
+	0,
+	0,
+	10,
+	266);
+INSERT INTO V_LIN
+	VALUES (269,
+	'9');
+INSERT INTO V_PAR
+	VALUES (269,
+	267,
+	0,
+	'x',
+	270,
+	1,
+	25);
+INSERT INTO V_VAL
+	VALUES (270,
+	0,
+	0,
+	-1,
+	-1,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	10,
+	266);
+INSERT INTO V_UNY
+	VALUES (270,
+	271,
+	'-');
+INSERT INTO V_PAR
+	VALUES (270,
+	267,
+	0,
+	'y',
+	272,
+	1,
+	30);
+INSERT INTO V_VAL
+	VALUES (271,
+	0,
+	0,
+	1,
+	33,
+	34,
+	0,
+	0,
+	0,
+	0,
+	10,
+	266);
+INSERT INTO V_LIN
+	VALUES (271,
+	'19');
+INSERT INTO V_VAL
+	VALUES (272,
+	0,
+	0,
+	1,
+	39,
+	39,
+	0,
+	0,
+	0,
+	0,
+	10,
+	266);
+INSERT INTO V_LIN
+	VALUES (272,
+	'5');
+INSERT INTO V_PAR
+	VALUES (272,
+	267,
+	0,
+	'z',
+	0,
+	1,
+	37);
+INSERT INTO V_VAL
+	VALUES (273,
+	0,
+	0,
+	2,
+	29,
+	29,
+	0,
+	0,
+	0,
+	0,
+	10,
+	266);
+INSERT INTO V_LIN
+	VALUES (273,
+	'0');
+INSERT INTO V_PAR
+	VALUES (273,
+	268,
+	0,
+	'heading',
+	0,
+	2,
+	21);
+INSERT INTO SM_STATE
+	VALUES (274,
+	196,
+	0,
+	'home',
+	11,
+	0);
+INSERT INTO SM_CH
+	VALUES (274,
+	197,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (274,
+	197,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (274,
+	191,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (274,
+	191,
+	196,
+	0);
+INSERT INTO SM_SEME
+	VALUES (274,
+	198,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (274,
+	199,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (274,
+	199,
+	196,
+	0);
+INSERT INTO SM_CH
+	VALUES (274,
+	200,
+	196,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (274,
+	200,
+	196,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (275,
+	196,
+	274);
+INSERT INTO SM_AH
+	VALUES (275,
+	196);
+INSERT INTO SM_ACT
+	VALUES (275,
+	196,
+	1,
+	'Port1::takeoff( alt:1 );
+Port1::set_heading( heading:0 );',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (276,
+	196,
+	275);
+INSERT INTO ACT_ACT
+	VALUES (276,
+	'state',
+	0,
+	277,
+	0,
+	0,
+	'Controller::home',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (277,
+	0,
+	0,
+	0,
+	'Port1',
+	'',
+	'',
+	2,
+	1,
+	2,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	276,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (278,
+	277,
+	279,
+	1,
+	1,
+	'Controller::home line: 1');
+INSERT INTO ACT_IOP
+	VALUES (278,
 	1,
 	8,
 	1,
@@ -3961,14 +4412,14 @@ INSERT INTO ACT_IOP
 	166,
 	0);
 INSERT INTO ACT_SMT
-	VALUES (265,
-	263,
+	VALUES (279,
+	277,
 	0,
 	2,
 	1,
-	'Controller::rise line: 2');
+	'Controller::home line: 2');
 INSERT INTO ACT_IOP
-	VALUES (265,
+	VALUES (279,
 	2,
 	8,
 	2,
@@ -3977,31 +4428,31 @@ INSERT INTO ACT_IOP
 	178,
 	0);
 INSERT INTO V_VAL
-	VALUES (266,
+	VALUES (280,
 	0,
 	0,
 	1,
 	21,
-	22,
+	21,
 	0,
 	0,
 	0,
 	0,
 	10,
-	263);
+	277);
 INSERT INTO V_LIN
-	VALUES (266,
-	'10');
+	VALUES (280,
+	'1');
 INSERT INTO V_PAR
-	VALUES (266,
-	264,
+	VALUES (280,
+	278,
 	0,
 	'alt',
 	0,
 	1,
 	17);
 INSERT INTO V_VAL
-	VALUES (267,
+	VALUES (281,
 	0,
 	0,
 	2,
@@ -4012,53 +4463,236 @@ INSERT INTO V_VAL
 	0,
 	0,
 	10,
-	263);
+	277);
 INSERT INTO V_LIN
-	VALUES (267,
+	VALUES (281,
 	'0');
 INSERT INTO V_PAR
-	VALUES (267,
-	265,
+	VALUES (281,
+	279,
 	0,
 	'heading',
 	0,
 	2,
 	21);
 INSERT INTO SM_NSTXN
-	VALUES (268,
+	VALUES (282,
 	196,
-	199,
-	197,
+	205,
+	191,
 	0);
 INSERT INTO SM_TAH
-	VALUES (269,
+	VALUES (283,
 	196,
-	268);
+	282);
 INSERT INTO SM_AH
-	VALUES (269,
+	VALUES (283,
 	196);
 INSERT INTO SM_ACT
-	VALUES (269,
+	VALUES (283,
 	196,
 	1,
 	'',
 	'',
 	0);
 INSERT INTO ACT_TAB
-	VALUES (270,
+	VALUES (284,
 	196,
-	269);
+	283);
 INSERT INTO ACT_ACT
-	VALUES (270,
+	VALUES (284,
 	'transition',
 	0,
-	271,
+	285,
+	0,
+	0,
+	'Controller2: ready',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (285,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	284,
+	0);
+INSERT INTO SM_TXN
+	VALUES (282,
+	196,
+	213,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (286,
+	196,
+	205,
+	198,
+	0);
+INSERT INTO SM_TAH
+	VALUES (287,
+	196,
+	286);
+INSERT INTO SM_AH
+	VALUES (287,
+	196);
+INSERT INTO SM_ACT
+	VALUES (287,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (288,
+	196,
+	287);
+INSERT INTO ACT_ACT
+	VALUES (288,
+	'transition',
+	0,
+	289,
+	0,
+	0,
+	'Controller3: halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (289,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	288,
+	0);
+INSERT INTO SM_TXN
+	VALUES (286,
+	196,
+	224,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (290,
+	196,
+	263,
+	191,
+	0);
+INSERT INTO SM_TAH
+	VALUES (291,
+	196,
+	290);
+INSERT INTO SM_AH
+	VALUES (291,
+	196);
+INSERT INTO SM_ACT
+	VALUES (291,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (292,
+	196,
+	291);
+INSERT INTO ACT_ACT
+	VALUES (292,
+	'transition',
+	0,
+	293,
+	0,
+	0,
+	'Controller2: ready',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (293,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	292,
+	0);
+INSERT INTO SM_TXN
+	VALUES (290,
+	196,
+	242,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (294,
+	196,
+	201,
+	197,
+	0);
+INSERT INTO SM_TAH
+	VALUES (295,
+	196,
+	294);
+INSERT INTO SM_AH
+	VALUES (295,
+	196);
+INSERT INTO SM_ACT
+	VALUES (295,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (296,
+	196,
+	295);
+INSERT INTO ACT_ACT
+	VALUES (296,
+	'transition',
+	0,
+	297,
 	0,
 	0,
 	'Controller1: start',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (271,
+	VALUES (297,
 	0,
 	0,
 	0,
@@ -4078,495 +4712,54 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	270,
+	296,
 	0);
 INSERT INTO SM_TXN
-	VALUES (268,
-	196,
-	203,
-	0);
-INSERT INTO SM_NSTXN
-	VALUES (272,
-	196,
-	203,
-	191,
-	0);
-INSERT INTO SM_TAH
-	VALUES (273,
-	196,
-	272);
-INSERT INTO SM_AH
-	VALUES (273,
-	196);
-INSERT INTO SM_ACT
-	VALUES (273,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
-	VALUES (274,
-	196,
-	273);
-INSERT INTO ACT_ACT
-	VALUES (274,
-	'transition',
-	0,
-	275,
-	0,
-	0,
-	'Controller2: ready',
-	0);
-INSERT INTO ACT_BLK
-	VALUES (275,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	274,
-	0);
-INSERT INTO SM_TXN
-	VALUES (272,
-	196,
-	211,
-	0);
-INSERT INTO SM_NSTXN
-	VALUES (276,
-	196,
-	203,
-	198,
-	0);
-INSERT INTO SM_TAH
-	VALUES (277,
-	196,
-	276);
-INSERT INTO SM_AH
-	VALUES (277,
-	196);
-INSERT INTO SM_ACT
-	VALUES (277,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
-	VALUES (278,
-	196,
-	277);
-INSERT INTO ACT_ACT
-	VALUES (278,
-	'transition',
-	0,
-	279,
-	0,
-	0,
-	'Controller3: halt',
-	0);
-INSERT INTO ACT_BLK
-	VALUES (279,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	278,
-	0);
-INSERT INTO SM_TXN
-	VALUES (276,
-	196,
-	221,
-	0);
-INSERT INTO SM_NSTXN
-	VALUES (280,
-	196,
-	211,
-	191,
-	0);
-INSERT INTO SM_TAH
-	VALUES (281,
-	196,
-	280);
-INSERT INTO SM_AH
-	VALUES (281,
-	196);
-INSERT INTO SM_ACT
-	VALUES (281,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
-	VALUES (282,
-	196,
-	281);
-INSERT INTO ACT_ACT
-	VALUES (282,
-	'transition',
-	0,
-	283,
-	0,
-	0,
-	'Controller2: ready',
-	0);
-INSERT INTO ACT_BLK
-	VALUES (283,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	282,
-	0);
-INSERT INTO SM_TXN
-	VALUES (280,
-	196,
-	228,
-	0);
-INSERT INTO SM_NSTXN
-	VALUES (284,
-	196,
-	211,
-	198,
-	0);
-INSERT INTO SM_TAH
-	VALUES (285,
-	196,
-	284);
-INSERT INTO SM_AH
-	VALUES (285,
-	196);
-INSERT INTO SM_ACT
-	VALUES (285,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
-	VALUES (286,
-	196,
-	285);
-INSERT INTO ACT_ACT
-	VALUES (286,
-	'transition',
-	0,
-	287,
-	0,
-	0,
-	'Controller3: halt',
-	0);
-INSERT INTO ACT_BLK
-	VALUES (287,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	286,
-	0);
-INSERT INTO SM_TXN
-	VALUES (284,
-	196,
-	221,
-	0);
-INSERT INTO SM_NSTXN
-	VALUES (288,
-	196,
-	228,
-	198,
-	0);
-INSERT INTO SM_TAH
-	VALUES (289,
-	196,
-	288);
-INSERT INTO SM_AH
-	VALUES (289,
-	196);
-INSERT INTO SM_ACT
-	VALUES (289,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
-	VALUES (290,
-	196,
-	289);
-INSERT INTO ACT_ACT
-	VALUES (290,
-	'transition',
-	0,
-	291,
-	0,
-	0,
-	'Controller3: halt',
-	0);
-INSERT INTO ACT_BLK
-	VALUES (291,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	290,
-	0);
-INSERT INTO SM_TXN
-	VALUES (288,
-	196,
-	221,
-	0);
-INSERT INTO SM_NSTXN
-	VALUES (292,
-	196,
-	239,
-	198,
-	0);
-INSERT INTO SM_TAH
-	VALUES (293,
-	196,
-	292);
-INSERT INTO SM_AH
-	VALUES (293,
-	196);
-INSERT INTO SM_ACT
-	VALUES (293,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
 	VALUES (294,
 	196,
-	293);
-INSERT INTO ACT_ACT
-	VALUES (294,
-	'transition',
-	0,
-	295,
-	0,
-	0,
-	'Controller3: halt',
-	0);
-INSERT INTO ACT_BLK
-	VALUES (295,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	294,
-	0);
-INSERT INTO SM_TXN
-	VALUES (292,
-	196,
-	221,
+	205,
 	0);
 INSERT INTO SM_NSTXN
-	VALUES (296,
+	VALUES (298,
 	196,
-	260,
-	191,
+	213,
+	198,
 	0);
 INSERT INTO SM_TAH
-	VALUES (297,
-	196,
-	296);
-INSERT INTO SM_AH
-	VALUES (297,
-	196);
-INSERT INTO SM_ACT
-	VALUES (297,
-	196,
-	1,
-	'',
-	'',
-	0);
-INSERT INTO ACT_TAB
-	VALUES (298,
-	196,
-	297);
-INSERT INTO ACT_ACT
-	VALUES (298,
-	'transition',
-	0,
-	299,
-	0,
-	0,
-	'Controller2: ready',
-	0);
-INSERT INTO ACT_BLK
 	VALUES (299,
-	0,
-	0,
-	0,
-	'',
-	'',
-	'',
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	298,
-	0);
-INSERT INTO SM_TXN
-	VALUES (296,
 	196,
-	239,
+	298);
+INSERT INTO SM_AH
+	VALUES (299,
+	196);
+INSERT INTO SM_ACT
+	VALUES (299,
+	196,
+	1,
+	'',
+	'',
 	0);
-INSERT INTO PE_PE
+INSERT INTO ACT_TAB
 	VALUES (300,
-	1,
-	0,
-	160,
-	7);
-INSERT INTO EP_PKG
-	VALUES (300,
-	0,
-	1,
-	'Functions',
-	'',
-	0);
-INSERT INTO PE_PE
-	VALUES (301,
-	1,
-	300,
-	0,
-	1);
-INSERT INTO S_SYNC
-	VALUES (301,
-	0,
-	'setup',
-	'',
-	'create object instance ctrl of Controller;
-generate Controller1:''start'' to ctrl;
-',
-	79,
-	1,
-	'',
-	0);
-INSERT INTO ACT_FNB
-	VALUES (302,
-	301);
+	196,
+	299);
 INSERT INTO ACT_ACT
-	VALUES (302,
-	'function',
+	VALUES (300,
+	'transition',
 	0,
-	303,
+	301,
 	0,
 	0,
-	'setup',
+	'Controller3: halt',
 	0);
 INSERT INTO ACT_BLK
-	VALUES (303,
+	VALUES (301,
 	0,
 	0,
 	0,
-	'V_VAR.Var_ID',
 	'',
 	'',
-	2,
-	1,
-	1,
-	32,
+	'',
 	0,
 	0,
 	0,
@@ -4576,103 +4769,123 @@ INSERT INTO ACT_BLK
 	0,
 	0,
 	0,
-	302,
-	0);
-INSERT INTO ACT_SMT
-	VALUES (304,
-	303,
-	305,
-	1,
-	1,
-	'setup line: 1');
-INSERT INTO ACT_CR
-	VALUES (304,
-	306,
-	1,
-	190,
-	1,
-	32);
-INSERT INTO ACT_SMT
-	VALUES (305,
-	303,
-	0,
-	2,
-	1,
-	'setup line: 2');
-INSERT INTO E_ESS
-	VALUES (305,
-	1,
-	0,
-	2,
-	10,
-	2,
-	22,
-	1,
-	32,
 	0,
 	0,
 	0,
-	0);
-INSERT INTO E_GES
-	VALUES (305);
-INSERT INTO E_GSME
-	VALUES (305,
-	197);
-INSERT INTO E_GEN
-	VALUES (305,
-	306);
-INSERT INTO V_VAR
-	VALUES (306,
-	303,
-	'ctrl',
-	1,
-	192);
-INSERT INTO V_INT
-	VALUES (306,
 	0,
-	190);
-INSERT INTO PE_PE
-	VALUES (307,
-	1,
 	300,
-	0,
-	1);
-INSERT INTO S_SYNC
-	VALUES (307,
-	0,
-	'halt',
-	'',
-	'select any ctrl from instances of Controller;
-generate Controller3:''halt'' to ctrl;
-',
-	79,
+	0);
+INSERT INTO SM_TXN
+	VALUES (298,
+	196,
+	224,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (302,
+	196,
+	213,
+	191,
+	0);
+INSERT INTO SM_TAH
+	VALUES (303,
+	196,
+	302);
+INSERT INTO SM_AH
+	VALUES (303,
+	196);
+INSERT INTO SM_ACT
+	VALUES (303,
+	196,
 	1,
 	'',
+	'',
 	0);
-INSERT INTO ACT_FNB
+INSERT INTO ACT_TAB
+	VALUES (304,
+	196,
+	303);
+INSERT INTO ACT_ACT
+	VALUES (304,
+	'transition',
+	0,
+	305,
+	0,
+	0,
+	'Controller2: ready',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (305,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	304,
+	0);
+INSERT INTO SM_TXN
+	VALUES (302,
+	196,
+	231,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (306,
+	196,
+	231,
+	199,
+	0);
+INSERT INTO SM_TAH
+	VALUES (307,
+	196,
+	306);
+INSERT INTO SM_AH
+	VALUES (307,
+	196);
+INSERT INTO SM_ACT
+	VALUES (307,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
 	VALUES (308,
+	196,
 	307);
 INSERT INTO ACT_ACT
 	VALUES (308,
-	'function',
+	'transition',
 	0,
 	309,
 	0,
 	0,
-	'halt',
+	'Controller4: Ddown',
 	0);
 INSERT INTO ACT_BLK
 	VALUES (309,
-	1,
 	0,
 	0,
-	'V_VAR.Var_ID',
+	0,
 	'',
 	'',
-	2,
-	1,
-	1,
-	35,
+	'',
+	0,
+	0,
+	0,
+	0,
 	0,
 	0,
 	0,
@@ -4684,30 +4897,684 @@ INSERT INTO ACT_BLK
 	0,
 	308,
 	0);
-INSERT INTO ACT_SMT
+INSERT INTO SM_TXN
+	VALUES (306,
+	196,
+	252,
+	0);
+INSERT INTO SM_NSTXN
 	VALUES (310,
-	309,
-	311,
+	196,
+	252,
+	191,
+	0);
+INSERT INTO SM_TAH
+	VALUES (311,
+	196,
+	310);
+INSERT INTO SM_AH
+	VALUES (311,
+	196);
+INSERT INTO SM_ACT
+	VALUES (311,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (312,
+	196,
+	311);
+INSERT INTO ACT_ACT
+	VALUES (312,
+	'transition',
+	0,
+	313,
+	0,
+	0,
+	'Controller2: ready',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (313,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	312,
+	0);
+INSERT INTO SM_TXN
+	VALUES (310,
+	196,
+	263,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (314,
+	196,
+	231,
+	198,
+	0);
+INSERT INTO SM_TAH
+	VALUES (315,
+	196,
+	314);
+INSERT INTO SM_AH
+	VALUES (315,
+	196);
+INSERT INTO SM_ACT
+	VALUES (315,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (316,
+	196,
+	315);
+INSERT INTO ACT_ACT
+	VALUES (316,
+	'transition',
+	0,
+	317,
+	0,
+	0,
+	'Controller3: halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (317,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	316,
+	0);
+INSERT INTO SM_TXN
+	VALUES (314,
+	196,
+	224,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (318,
+	196,
+	252,
+	198,
+	0);
+INSERT INTO SM_TAH
+	VALUES (319,
+	196,
+	318);
+INSERT INTO SM_AH
+	VALUES (319,
+	196);
+INSERT INTO SM_ACT
+	VALUES (319,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (320,
+	196,
+	319);
+INSERT INTO ACT_ACT
+	VALUES (320,
+	'transition',
+	0,
+	321,
+	0,
+	0,
+	'Controller3: halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (321,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	320,
+	0);
+INSERT INTO SM_TXN
+	VALUES (318,
+	196,
+	224,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (322,
+	196,
+	263,
+	198,
+	0);
+INSERT INTO SM_TAH
+	VALUES (323,
+	196,
+	322);
+INSERT INTO SM_AH
+	VALUES (323,
+	196);
+INSERT INTO SM_ACT
+	VALUES (323,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (324,
+	196,
+	323);
+INSERT INTO ACT_ACT
+	VALUES (324,
+	'transition',
+	0,
+	325,
+	0,
+	0,
+	'Controller3: halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (325,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	324,
+	0);
+INSERT INTO SM_TXN
+	VALUES (322,
+	196,
+	224,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (326,
+	196,
+	242,
+	191,
+	0);
+INSERT INTO SM_TAH
+	VALUES (327,
+	196,
+	326);
+INSERT INTO SM_AH
+	VALUES (327,
+	196);
+INSERT INTO SM_ACT
+	VALUES (327,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (328,
+	196,
+	327);
+INSERT INTO ACT_ACT
+	VALUES (328,
+	'transition',
+	0,
+	329,
+	0,
+	0,
+	'Controller2: ready',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (329,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	328,
+	0);
+INSERT INTO SM_TXN
+	VALUES (326,
+	196,
+	274,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (330,
+	196,
+	274,
+	198,
+	0);
+INSERT INTO SM_TAH
+	VALUES (331,
+	196,
+	330);
+INSERT INTO SM_AH
+	VALUES (331,
+	196);
+INSERT INTO SM_ACT
+	VALUES (331,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (332,
+	196,
+	331);
+INSERT INTO ACT_ACT
+	VALUES (332,
+	'transition',
+	0,
+	333,
+	0,
+	0,
+	'Controller3: halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (333,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	332,
+	0);
+INSERT INTO SM_TXN
+	VALUES (330,
+	196,
+	224,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (334,
+	196,
+	242,
+	198,
+	0);
+INSERT INTO SM_TAH
+	VALUES (335,
+	196,
+	334);
+INSERT INTO SM_AH
+	VALUES (335,
+	196);
+INSERT INTO SM_ACT
+	VALUES (335,
+	196,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (336,
+	196,
+	335);
+INSERT INTO ACT_ACT
+	VALUES (336,
+	'transition',
+	0,
+	337,
+	0,
+	0,
+	'Controller3: halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (337,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	336,
+	0);
+INSERT INTO SM_TXN
+	VALUES (334,
+	196,
+	224,
+	0);
+INSERT INTO PE_PE
+	VALUES (338,
+	1,
+	0,
+	160,
+	7);
+INSERT INTO EP_PKG
+	VALUES (338,
+	0,
+	1,
+	'Functions',
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES (339,
+	1,
+	338,
+	0,
+	1);
+INSERT INTO S_SYNC
+	VALUES (339,
+	0,
+	'setup',
+	'',
+	'',
+	79,
+	1,
+	'',
+	0);
+INSERT INTO ACT_FNB
+	VALUES (340,
+	339);
+INSERT INTO ACT_ACT
+	VALUES (340,
+	'function',
+	0,
+	341,
+	0,
+	0,
+	'setup',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (341,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	340,
+	0);
+INSERT INTO PE_PE
+	VALUES (342,
+	1,
+	338,
+	0,
+	1);
+INSERT INTO S_SYNC
+	VALUES (342,
+	0,
+	'halt',
+	'',
+	'create object instance ctrl of Controller;
+generate Controller3:''halt'' to ctrl;',
+	79,
+	1,
+	'',
+	0);
+INSERT INTO ACT_FNB
+	VALUES (343,
+	342);
+INSERT INTO ACT_ACT
+	VALUES (343,
+	'function',
+	0,
+	344,
+	0,
+	0,
+	'halt',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (344,
+	0,
+	0,
+	0,
+	'V_VAR.Var_ID',
+	'',
+	'',
+	2,
+	1,
+	1,
+	32,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	343,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (345,
+	344,
+	346,
 	1,
 	1,
 	'halt line: 1');
+INSERT INTO ACT_CR
+	VALUES (345,
+	347,
+	1,
+	190,
+	1,
+	32);
+INSERT INTO ACT_SMT
+	VALUES (346,
+	344,
+	0,
+	2,
+	1,
+	'halt line: 2');
+INSERT INTO E_ESS
+	VALUES (346,
+	1,
+	0,
+	2,
+	10,
+	2,
+	22,
+	1,
+	32,
+	0,
+	0,
+	0,
+	0);
+INSERT INTO E_GES
+	VALUES (346);
+INSERT INTO E_GSME
+	VALUES (346,
+	198);
+INSERT INTO E_GEN
+	VALUES (346,
+	347);
+INSERT INTO V_VAR
+	VALUES (347,
+	344,
+	'ctrl',
+	1,
+	192);
+INSERT INTO V_INT
+	VALUES (347,
+	0,
+	190);
+INSERT INTO PE_PE
+	VALUES (348,
+	1,
+	338,
+	0,
+	1);
+INSERT INTO S_SYNC
+	VALUES (348,
+	0,
+	'Ddown',
+	'',
+	'select any ctrl from instances of Controller;
+generate Controller4:''Ddown'' to ctrl;
+',
+	79,
+	1,
+	'',
+	0);
+INSERT INTO ACT_FNB
+	VALUES (349,
+	348);
+INSERT INTO ACT_ACT
+	VALUES (349,
+	'function',
+	0,
+	350,
+	0,
+	0,
+	'Ddown',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (350,
+	1,
+	0,
+	0,
+	'V_VAR.Var_ID',
+	'',
+	'',
+	2,
+	1,
+	1,
+	35,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	349,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (351,
+	350,
+	352,
+	1,
+	1,
+	'Ddown line: 1');
 INSERT INTO ACT_FIO
-	VALUES (310,
-	312,
+	VALUES (351,
+	353,
 	1,
 	'any',
 	190,
 	1,
 	35);
 INSERT INTO ACT_SMT
-	VALUES (311,
-	309,
+	VALUES (352,
+	350,
 	0,
 	2,
 	1,
-	'halt line: 2');
+	'Ddown line: 2');
 INSERT INTO E_ESS
-	VALUES (311,
+	VALUES (352,
 	1,
 	0,
 	2,
@@ -4721,38 +5588,249 @@ INSERT INTO E_ESS
 	0,
 	0);
 INSERT INTO E_GES
-	VALUES (311);
+	VALUES (352);
 INSERT INTO E_GSME
-	VALUES (311,
-	198);
+	VALUES (352,
+	199);
 INSERT INTO E_GEN
-	VALUES (311,
-	312);
+	VALUES (352,
+	353);
 INSERT INTO V_VAR
-	VALUES (312,
-	309,
+	VALUES (353,
+	350,
 	'ctrl',
 	1,
 	192);
 INSERT INTO V_INT
-	VALUES (312,
+	VALUES (353,
+	0,
+	190);
+INSERT INTO PE_PE
+	VALUES (354,
+	1,
+	338,
+	0,
+	1);
+INSERT INTO S_SYNC
+	VALUES (354,
+	0,
+	'Dup',
+	'',
+	'select any ctrl from instances of Controller;
+generate Controller5:''Dup'' to ctrl;',
+	79,
+	1,
+	'',
+	0);
+INSERT INTO ACT_FNB
+	VALUES (355,
+	354);
+INSERT INTO ACT_ACT
+	VALUES (355,
+	'function',
+	0,
+	356,
+	0,
+	0,
+	'Dup',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (356,
+	1,
+	0,
+	0,
+	'V_VAR.Var_ID',
+	'',
+	'',
+	2,
+	1,
+	1,
+	35,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	355,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (357,
+	356,
+	358,
+	1,
+	1,
+	'Dup line: 1');
+INSERT INTO ACT_FIO
+	VALUES (357,
+	359,
+	1,
+	'any',
+	190,
+	1,
+	35);
+INSERT INTO ACT_SMT
+	VALUES (358,
+	356,
+	0,
+	2,
+	1,
+	'Dup line: 2');
+INSERT INTO E_ESS
+	VALUES (358,
+	1,
+	0,
+	2,
+	10,
+	2,
+	22,
+	1,
+	35,
+	0,
+	0,
+	0,
+	0);
+INSERT INTO E_GES
+	VALUES (358);
+INSERT INTO E_GSME
+	VALUES (358,
+	200);
+INSERT INTO E_GEN
+	VALUES (358,
+	359);
+INSERT INTO V_VAR
+	VALUES (359,
+	356,
+	'ctrl',
+	1,
+	192);
+INSERT INTO V_INT
+	VALUES (359,
+	0,
+	190);
+INSERT INTO PE_PE
+	VALUES (360,
+	1,
+	338,
+	0,
+	1);
+INSERT INTO S_SYNC
+	VALUES (360,
+	0,
+	'startSetup',
+	'',
+	'create object instance ctrl of Controller;
+generate Controller1:''start'' to ctrl;',
+	79,
+	1,
+	'',
+	0);
+INSERT INTO ACT_FNB
+	VALUES (361,
+	360);
+INSERT INTO ACT_ACT
+	VALUES (361,
+	'function',
+	0,
+	362,
+	0,
+	0,
+	'startSetup',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (362,
+	0,
+	0,
+	0,
+	'V_VAR.Var_ID',
+	'',
+	'',
+	2,
+	1,
+	1,
+	32,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	361,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (363,
+	362,
+	364,
+	1,
+	1,
+	'startSetup line: 1');
+INSERT INTO ACT_CR
+	VALUES (363,
+	365,
+	1,
+	190,
+	1,
+	32);
+INSERT INTO ACT_SMT
+	VALUES (364,
+	362,
+	0,
+	2,
+	1,
+	'startSetup line: 2');
+INSERT INTO E_ESS
+	VALUES (364,
+	1,
+	0,
+	2,
+	10,
+	2,
+	22,
+	1,
+	32,
+	0,
+	0,
+	0,
+	0);
+INSERT INTO E_GES
+	VALUES (364);
+INSERT INTO E_GSME
+	VALUES (364,
+	197);
+INSERT INTO E_GEN
+	VALUES (364,
+	365);
+INSERT INTO V_VAR
+	VALUES (365,
+	362,
+	'ctrl',
+	1,
+	192);
+INSERT INTO V_INT
+	VALUES (365,
 	0,
 	190);
 INSERT INTO EP_PKG
-	VALUES (313,
+	VALUES (366,
 	1,
 	1,
 	'System',
 	'',
 	0);
 INSERT INTO PE_PE
-	VALUES (314,
+	VALUES (367,
 	1,
-	313,
+	366,
 	0,
 	21);
 INSERT INTO CL_IC
-	VALUES (314,
+	VALUES (367,
 	133,
 	0,
 	0,
@@ -4761,32 +5839,32 @@ INSERT INTO CL_IC
 	'gnc::Library::MAV',
 	'');
 INSERT INTO CL_POR
-	VALUES (314,
+	VALUES (367,
 	134,
 	'Port1',
-	315);
+	368);
 INSERT INTO CL_IIR
-	VALUES (316,
+	VALUES (369,
 	135,
-	315,
+	368,
 	0,
 	'mavcontrol',
 	'');
 INSERT INTO CL_IP
-	VALUES (316,
+	VALUES (369,
 	'mavcontrol',
 	'');
 INSERT INTO CL_IPINS
-	VALUES (317,
-	316);
+	VALUES (370,
+	369);
 INSERT INTO PE_PE
-	VALUES (318,
+	VALUES (371,
 	1,
-	313,
+	366,
 	0,
 	21);
 INSERT INTO CL_IC
-	VALUES (318,
+	VALUES (371,
 	160,
 	0,
 	0,
@@ -4795,30 +5873,30 @@ INSERT INTO CL_IC
 	'gnc::Library::Control',
 	'');
 INSERT INTO CL_POR
-	VALUES (318,
+	VALUES (371,
 	161,
 	'Port1',
-	319);
+	372);
 INSERT INTO CL_IIR
-	VALUES (320,
+	VALUES (373,
 	162,
-	319,
+	372,
 	0,
 	'mavcontrol',
 	'');
 INSERT INTO CL_IR
-	VALUES (320,
-	317,
+	VALUES (373,
+	370,
 	'mavcontrol',
 	'');
 INSERT INTO PE_PE
-	VALUES (317,
+	VALUES (370,
 	1,
-	313,
+	366,
 	0,
 	22);
 INSERT INTO C_SF
-	VALUES (317,
+	VALUES (370,
 	162,
 	135,
 	'',
@@ -4899,19 +5977,19 @@ INSERT INTO S_CDT
 	VALUES (86,
 	4);
 INSERT INTO PE_PE
-	VALUES (321,
+	VALUES (374,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (321,
+	VALUES (374,
 	0,
 	'unique_id',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (321,
+	VALUES (374,
 	5);
 INSERT INTO PE_PE
 	VALUES (195,
@@ -4929,19 +6007,19 @@ INSERT INTO S_CDT
 	VALUES (195,
 	6);
 INSERT INTO PE_PE
-	VALUES (322,
+	VALUES (375,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (322,
+	VALUES (375,
 	0,
 	'same_as<Base_Attribute>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (322,
+	VALUES (375,
 	7);
 INSERT INTO PE_PE
 	VALUES (192,
@@ -4959,19 +6037,19 @@ INSERT INTO S_CDT
 	VALUES (192,
 	8);
 INSERT INTO PE_PE
-	VALUES (323,
+	VALUES (376,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (323,
+	VALUES (376,
 	0,
 	'inst_ref_set<Object>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (323,
+	VALUES (376,
 	9);
 INSERT INTO PE_PE
 	VALUES (50,
@@ -4989,49 +6067,49 @@ INSERT INTO S_CDT
 	VALUES (50,
 	10);
 INSERT INTO PE_PE
-	VALUES (324,
+	VALUES (377,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (324,
+	VALUES (377,
 	0,
 	'inst<Mapping>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (324,
+	VALUES (377,
 	11);
 INSERT INTO PE_PE
-	VALUES (325,
+	VALUES (378,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (325,
+	VALUES (378,
 	0,
 	'inst_ref<Mapping>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (325,
+	VALUES (378,
 	12);
 INSERT INTO PE_PE
-	VALUES (326,
+	VALUES (379,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (326,
+	VALUES (379,
 	0,
 	'component_ref',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (326,
+	VALUES (379,
 	13);
 INSERT INTO PE_PE
 	VALUES (5,
@@ -5047,7 +6125,7 @@ INSERT INTO S_DT
 	'');
 INSERT INTO S_UDT
 	VALUES (5,
-	324,
+	377,
 	1,
 	'');
 INSERT INTO PE_PE
@@ -5064,7 +6142,7 @@ INSERT INTO S_DT
 	'');
 INSERT INTO S_UDT
 	VALUES (47,
-	325,
+	378,
 	3,
 	'');
 INSERT INTO PE_PE

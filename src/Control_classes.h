@@ -43,8 +43,11 @@ typedef struct Control_Controller Control_Controller;
 /*
  * UML Domain Functions (Synchronous Services)
  */
+void Control_Ddown( void );
+void Control_Dup( void );
 void Control_halt( void );
 void Control_setup( void );
+void Control_startSetup( void );
 
 #include "Control.h"
 #include "Control_Controller_class.h"

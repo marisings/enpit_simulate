@@ -38,9 +38,7 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'setup',
 	'',
-	'create object instance ctrl of Controller;
-generate Controller1:''start'' to ctrl;
-',
+	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
@@ -56,15 +54,66 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'halt',
 	'',
-	'select any ctrl from instances of Controller;
-generate Controller3:''halt'' to ctrl;
-',
+	'create object instance ctrl of Controller;
+generate Controller3:''halt'' to ctrl;',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
 	0);
 INSERT INTO PE_PE
 	VALUES ("e3b91143-4d21-4068-b6d0-df931bdfac7c",
+	1,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("b54387eb-3bf1-4801-a092-dda39d0b6022",
+	"00000000-0000-0000-0000-000000000000",
+	'Ddown',
+	'',
+	'select any ctrl from instances of Controller;
+generate Controller4:''Ddown'' to ctrl;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("b54387eb-3bf1-4801-a092-dda39d0b6022",
+	1,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("15732163-deec-4a8f-b238-de5fc4466e0b",
+	"00000000-0000-0000-0000-000000000000",
+	'Dup',
+	'',
+	'select any ctrl from instances of Controller;
+generate Controller5:''Dup'' to ctrl;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("15732163-deec-4a8f-b238-de5fc4466e0b",
+	1,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("9c87cd91-ad2a-41a8-843e-37432906ea76",
+	"00000000-0000-0000-0000-000000000000",
+	'startSetup',
+	'',
+	'create object instance ctrl of Controller;
+generate Controller1:''start'' to ctrl;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("9c87cd91-ad2a-41a8-843e-37432906ea76",
 	1,
 	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
 	"00000000-0000-0000-0000-000000000000",

@@ -42,7 +42,7 @@ float current_heading_g;
 float local_offset_g;
 float correction_heading_g = 0;
 float local_desired_heading_g; 
-
+int mesg = 0;
 
 
 ros::Publisher local_pos_pub;
@@ -470,9 +470,31 @@ int gnc_land()
 
 void command_cb(const std_msgs::String::ConstPtr& msg)
 {
-	ROS_INFO("recv message");
-	Control_halt();
+
+	ROS_INFO("recv message start");
+	Control_startSetup();
+/*
+	if(msgs == "start"){
+
+
+	}else{
+		ROS_INFO("recv message halt");
+		Control_halt();
+
+	}
+
+
+	if(command_sub == "start")
+	{
+
+	}
+	if(command_sub == "halt")
+	{
+
+	}*//**/
 }
+
+
 
 /**
 \ingroup control_functions
@@ -499,6 +521,7 @@ int init_publisher_subscriber(ros::NodeHandle controlnode)
 	takeoff_client = controlnode.serviceClient<mavros_msgs::CommandTOL>((ros_namespace + "/mavros/cmd/takeoff").c_str());
 	collision_sub = controlnode.subscribe<sensor_msgs::LaserScan>("/spur/laser/scan", 1, scan_cb);
 	command_sub = controlnode.subscribe("cmd", 10, command_cb);
+
 }
 
 void gnc_sigint_handler(int sig) {
