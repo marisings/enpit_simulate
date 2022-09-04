@@ -199,7 +199,7 @@ static const Escher_SEMcell_t Control_Controller_StateEventMatrix[ 9 + 1 ][ 5 ] 
   /* row 6:  Control_Controller_STATE_8 (goal) */
   { EVENT_CANT_HAPPEN, Control_Controller_STATE_11, Control_Controller_STATE_4, EVENT_CANT_HAPPEN, EVENT_CANT_HAPPEN },
   /* row 7:  Control_Controller_STATE_9 (descent) */
-  { EVENT_CANT_HAPPEN, Control_Controller_STATE_10, Control_Controller_STATE_4, EVENT_CANT_HAPPEN, EVENT_CANT_HAPPEN },
+  { EVENT_CANT_HAPPEN, EVENT_CANT_HAPPEN, Control_Controller_STATE_4, EVENT_CANT_HAPPEN, Control_Controller_STATE_10 },
   /* row 8:  Control_Controller_STATE_10 (rise) */
   { EVENT_CANT_HAPPEN, Control_Controller_STATE_8, Control_Controller_STATE_4, EVENT_CANT_HAPPEN, EVENT_CANT_HAPPEN },
   /* row 9:  Control_Controller_STATE_11 (home) */

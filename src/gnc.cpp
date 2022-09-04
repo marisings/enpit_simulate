@@ -470,16 +470,19 @@ int gnc_land()
 
 void command_cb(const std_msgs::String::ConstPtr& msg)
 {
-
 	ROS_INFO("recv message start");
 	Control_startSetup();
 /*
-	if(msgs == "start"){
+	if(msg == "start"){
 
 
 	}else{
 		ROS_INFO("recv message halt");
 		Control_halt();
+		ROS_INFO("recv message Ddown");
+		Control_Ddown();
+		ROS_INFO("recv message Dup");
+		Control_Dup();
 
 	}
 

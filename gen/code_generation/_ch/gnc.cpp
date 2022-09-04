@@ -470,18 +470,23 @@ int gnc_land()
 
 void command_cb(const std_msgs::String::ConstPtr& msg)
 {
+	ROS_INFO("recv message start");
+	Control_startSetup();
+/*
+	if(msg == "start"){
 
-	if(msgs == "start"){
-		ROS_INFO("recv message start");
-		Control_startSetup();
 
 	}else{
 		ROS_INFO("recv message halt");
 		Control_halt();
+		ROS_INFO("recv message Ddown");
+		Control_Ddown();
+		ROS_INFO("recv message Dup");
+		Control_Dup();
 
 	}
 
-	/*
+
 	if(command_sub == "start")
 	{
 
@@ -518,7 +523,7 @@ int init_publisher_subscriber(ros::NodeHandle controlnode)
 	set_mode_client = controlnode.serviceClient<mavros_msgs::SetMode>((ros_namespace + "/mavros/set_mode").c_str());
 	takeoff_client = controlnode.serviceClient<mavros_msgs::CommandTOL>((ros_namespace + "/mavros/cmd/takeoff").c_str());
 	collision_sub = controlnode.subscribe<sensor_msgs::LaserScan>("/spur/laser/scan", 1, scan_cb);
-	command_sub msgs = controlnode.subscribe("cmd", 10, command_cb);
+	command_sub = controlnode.subscribe("cmd", 10, command_cb);
 
 }
 
